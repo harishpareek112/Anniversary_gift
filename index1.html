@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For My Bacha ❤️</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Amazing gift for Mummy and Papa</h1>
+    <div class="album">
+      <!-- Photo 1 -->
+      <div class="photo-card" data-song="song1.mp3">
+        <div class="message">You are the sunshine of my life! 🌞</div>
+        <img src="photo1.jpg" alt="Photo 1" class="photo">
+      </div>
+      <!-- Photo 2 -->
+      <div class="photo-card" data-song="song2.mp3">
+        <div class="message">Every moment with you is magical! ✨</div>
+        <img src="photo2.jpg" alt="Photo 2" class="photo">
+      </div>
+      <!-- Photo 3 -->
+      <div class="photo-card" data-song="song3.mp3">
+        <div class="message">Parents: my first and forever love.💓</div>
+        <img src="photo3.jpg" alt="Photo 3" class="photo">
+      </div>
+      <!-- Video Card -->
+      <div class="photo-card" data-song="song4.mp3">
+        <div class="message">Here’s a special moment for you! 🎥</div>
+        <video class="photo" muted>
+          <source src="video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+    <!-- Special Button -->
+    <button id="special-button">Click Me for a Surprise!</button>
+  </div>
+
+  <!-- Mini Popup -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span id="popup-message"></span>
+    </div>
+  </div>
+  <audio id="background-music" src="mann-jogiya-zKnON-besttone.mp3" loop></audio>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

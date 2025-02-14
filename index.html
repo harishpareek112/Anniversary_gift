@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>A Small gift form Aksh Sharma</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        .container {
+            position: relative;
+            min-height: 100vh;
+            background: url('download.jpg') center/cover no-repeat;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-out forwards;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content {
+            font-family: 'Pacifico', cursive;
+            text-align: center;
+            padding: 20px;
+            background: rgba(231, 127, 174, 0);
+            border-radius: 15px;
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideUp 1s ease-out 1s forwards;
+            color: #000000;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        h3 {
+            font-size: 1.7em;
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideUp 1s ease-out 1s forwards;
+            color: #000000;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            line-height: 1.4;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin: 15px 0;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideUp 1s ease-out forwards;
+            color: fuchsia;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        .ep-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #ff6b6b;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideUp 1s ease-out 0.5s forwards;
+            transition: background 0.3s ease;
+        }
+
+        .next-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            opacity: 0;
+            animation: fadeIn 1s ease-out 2s forwards;
+            z-index: 1000;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                padding: 15px;
+                width: 95%;
+            }
+
+            h1 {
+                font-size: 2em;
+                margin-bottom: 15px;
+            }
+
+            h3 {
+                font-size: 1.3em;
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .next-btn {
+                padding: 12px 18px;
+                font-size: 0.9em;
+                top: 15px;
+                right: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h3 {
+                font-size: 1.1em;
+            }
+
+            .next-btn {
+                padding: 10px 15px;
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        p:nth-child(2) { animation-delay: 1.2s; }
+        p:nth-child(3) { animation-delay: 1.4s; }
+        p:nth-child(4) { animation-delay: 1.6s; }
+        .author { animation-delay: 1.8s; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="next-btn" onclick="window.location.href='index1.html'">Next →</button>
+        <div class="content">
+            <h1>Happy Anniversary MOM and Dad</h1>
+            <h3>Every day, I am grateful for the love and support you give me, Mom and Dad. You're the best.</h3>
+            <p class="author">by Akash Sharma</p>
+        </div>
+    </div>
+</body>
+</html>
